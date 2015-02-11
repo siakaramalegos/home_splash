@@ -32,18 +32,27 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# My gems -----------------------------------------------------------------------------
+
+# Date and time formatting
+gem 'stamp'
+
+# Don't want WEBrick
+gem 'thin'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  # My stuff --------------------------------------------------------------------------
+
+  # Quiet those assets down!  Reduces noise in the logs
+  gem 'quiet_assets'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# My gems -----------------------------------------------------------------------------
-
-# Date and time formatting
-gem 'stamp'
