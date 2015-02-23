@@ -7,13 +7,13 @@ class HomeController < ApplicationController
     # Case statement instead of a lot of elsifs
     @greet_message = case right_now.hour
     when 5..11
-      "Good morning!  Kalimera!"
+      "Good morning!  Καλημέρα!"
     when 12..15
-      "Good afternoon! Kalimera"
+      "Good afternoon! Καλημέρα"
     when 16..19
-      "Good evening!  Kalispera!"
+      "Good evening!  Καλησπέρα!"
     when 20..23, 0..4
-      "Good night.  Kalinixta."
+      "Good night.  Καληνύχτα."
     end
 
   end
