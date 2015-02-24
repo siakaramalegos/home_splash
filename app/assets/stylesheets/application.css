@@ -32,3 +32,12 @@ body {
   color: white;
   left: 0;
 }
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #ccc;
+}
