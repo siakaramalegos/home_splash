@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
     right_now = Time.now
     @current_time = right_now.stamp("12:00")
-    #@current_date = right_now.stamp("feb 1, 2015")
+    @current_date = right_now.stamp("February 1, 2015")
 
     # Adjust message by time of day
     # Case statement instead of a lot of elsifs
