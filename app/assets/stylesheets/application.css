@@ -20,3 +20,15 @@ body {
   color: #fff;
   background-color: #2E41B3;
 }
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2em;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 1em 0 1em 0;
+  color: white;
+  left: 0;
+}
