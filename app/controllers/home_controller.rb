@@ -1,3 +1,6 @@
+# Weather forecast API
+#require 'forecast_io'
+
 class HomeController < ApplicationController
   def index
     right_now = Time.now
@@ -16,6 +19,9 @@ class HomeController < ApplicationController
     when 20..23, 0..4
       "good night  晚安  καληνύχτα  ليلة سعيدة  đêm tốt    おやすみ  buenas noches"
     end
+
+    #forecast = ForecastIO.forecast(37.8267, -122.423)
+    #@temp = forecast.currently.temperature
 
   end
 
