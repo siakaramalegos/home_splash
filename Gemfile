@@ -55,6 +55,9 @@ group :development, :test do
   # Quiet those assets down!  Reduces noise in the logs
   gem 'quiet_assets'
 
+  # Gives great puts formatting
+  gem 'awesome_print'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
