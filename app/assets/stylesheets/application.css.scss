@@ -36,6 +36,21 @@ body {
   padding: 1em 0 1em 0;
   color: white;
   left: 0;
+  font-size: 15px;
+
+  #quote {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    font-size: 20px;
+
+    &:before {
+      content: open-quote;
+    }
+
+    &:after {
+      content: close-quote;
+    }
+  }
 
   a {
     color: white;
@@ -50,3 +65,4 @@ body {
 .shadow {
   text-shadow: 2px 2px 1px #555; // add shadow for text
 }
+
