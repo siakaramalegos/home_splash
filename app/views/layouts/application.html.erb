@@ -12,6 +12,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="clearance_links">
+    <% if signed_in? %>
+      Welcome <%= current_user.email %>!
+      <%= link_to (fa_icon "sign-out", text: "Sign out"), sign_out_path, method: :delete %>
+    <% else %>
+      <%= link_to (fa_icon "sign-in", text: 'Sign in'), sign_in_path %>
+      <%= link_to (fa_icon "users", text: 'Sign up'), sign_up_path %>
+    <% end %>
+  </div>
+
+  <div id="flash">
+    <% flash.each do |key, value| %>
+      <div class="flash <%= key %>"><%= value %></div>
+    <% end %>
+  </div>
+
   <div class = "container-fluid">
     <%= yield %>
   </div>

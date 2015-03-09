@@ -55,11 +55,17 @@ group :development, :test do
 
   # My stuff --------------------------------------------------------------------------
 
-  # Quiet those assets down!  Reduces noise in the logs
-  gem 'quiet_assets'
-
   # Gives great puts formatting
   gem 'awesome_print'
+
+end
+
+group :development do
+  # Preview email in gem
+  gem 'letter_opener'
+
+  # Quiet those assets down!  Reduces noise in the logs
+  gem 'quiet_assets'
 
 end
 
