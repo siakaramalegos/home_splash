@@ -27,6 +27,16 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  .flash.notice {
+    background-color: rgba(255,0,0,0.5);
+    padding: 1em;
+    width: 500px;
+    margin: 0.5em auto;
+    border-radius: 5px;
+    font-weight: bold;
+
+  }
 }
 
 .footer {
@@ -103,6 +113,18 @@ body {
   }
 
   div {
-    padding-top: 0.3em;
+    padding-top: 0.7em;
+  }
+
+  .other-links {
+    font-size: $minor-sized;
+    margin-top: 0.7em;
+    //padding: 10px;
+    //border: 1px solid rgba(255,255,255,0.6);
+    //border-radius: 5px;
+
+    a {
+      padding: 2px;
+    }
   }
 }
