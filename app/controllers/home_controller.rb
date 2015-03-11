@@ -22,8 +22,9 @@ class HomeController < ApplicationController
 
     #forecast = ForecastIO.forecast(37.8267, -122.423)
     #@temp = forecast.currently.temperature
-
-    @quote = Quote.all.sample.quip
+    @quote = Quote.all.sample
+    @quip = @quote.quip
+    @author = @quote.author
 
   end
 
