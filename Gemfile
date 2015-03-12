@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -58,6 +57,9 @@ group :development, :test do
   # Gives great puts formatting
   gem 'awesome_print'
 
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+
 end
 
 group :development do
@@ -67,6 +69,11 @@ group :development do
   # Quiet those assets down!  Reduces noise in the logs
   gem 'quiet_assets'
 
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
