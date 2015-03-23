@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310154444) do
+ActiveRecord::Schema.define(version: 20150323202109) do
 
   create_table "backgrounds", force: :cascade do |t|
     t.integer  "user_id"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 20150310154444) do
     t.string   "encrypted_password", limit: 128, null: false
     t.string   "confirmation_token", limit: 128
     t.string   "remember_token",     limit: 128, null: false
+    t.datetime "last_seen_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email"
