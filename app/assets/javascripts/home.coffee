@@ -23,4 +23,7 @@ pad = (number) ->
   twelveHours = if twelveHours == 0 then 12 else pad(twelveHours)
 
   currentTimeString = "#{twelveHours}:#{currentMins}"
+  currentDateString = $.format.date(currentTime, "MMMM d, yyyy")
+
+  $('#date').html currentDateString
   $('#clock').html currentTimeString
