@@ -18,7 +18,7 @@
 $(document).ready(function() {
     // This code will have h2 appear when hovering on h1 and then disappear when mousing away
 
-    $(".footer").hover(function() {
+    $(".quote-box").hover(function() {
       $("#author").fadeIn( 500 );
     }, function(){
       $("#author").fadeOut( 200 );
