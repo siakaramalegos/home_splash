@@ -15,6 +15,18 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function() {
+    // This code will have h2 appear when hovering on h1 and then disappear when mousing away
+
+    $("#quote").hover(function() {
+      $("#author").fadeIn( 500 );
+    }, function(){
+      $("#author").fadeOut( 200 );
+    });
+});
+
+// Moved this stuff to home.coffee:
+
 // $(document).ready(function() {
 //     // Make it update every second
 //     setInterval('updateClock()', 1000);
