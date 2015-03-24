@@ -16,4 +16,6 @@ rvm:
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
 
-script: bundle exec rake test
+script:
+  - bundle exec rake db:migrate
+  - bundle exec rake test
