@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
 
   before_filter :set_last_seen_at, if: proc { signed_in? && (session[:last_seen_at] == nil || session[:last_seen_at] < 15.minutes.ago) }
 
+  # @object.image = image-url("OpaBySia00226.jpg")
+
   private
 
   def set_last_seen_at

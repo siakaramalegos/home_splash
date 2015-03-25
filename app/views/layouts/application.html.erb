@@ -12,6 +12,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <style media="screen">
+    body { background-image: url(<%= image_path("OpaBySia00226.jpg") %>); }
+  </style>
+
   <div id="clearance_links">
     <% if signed_in? %>
       Welcome <%= current_user.email %>!
