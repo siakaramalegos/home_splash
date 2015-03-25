@@ -2,6 +2,7 @@
 #require 'forecast_io'
 
 class HomeController < ApplicationController
+
   def index
     right_now = Time.now
     @current_time = right_now.stamp("12:00")
@@ -27,6 +28,5 @@ class HomeController < ApplicationController
     @author = @quote.author
 
   end
-
 
 end
